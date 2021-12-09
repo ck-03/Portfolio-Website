@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+        .ab{
+        background: url('5.JPG');
+        min-width : 720px;
+        min-height : 775px;
+        background-size:100% 100%;}
+        .ab h1{position:absolute;
+        text-decoration: underline;
+        color:rgb(4, 16, 117);
+        margin:0%;
+        font-size:50px;
+        top:28%;
+        left:39%;
+        }
+        .ac{position:absolute;
+        margin:0%;
+        top:42%;
+        left:32%;
+        color:azure;
+        font-size: 20px;
+        background-color: rgb(19, 101, 255);
+        border-color: rgb(2, 24, 44);
+        border-style: solid;
+        border-width: 5px;
+        max-width: 660px;}
+        </style>
+</head>
+
+<body>      
+<div class="ab">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Guess the Days</h1>
+        <div class="ac">
+        <center>
+        <script>
+                var date=new Date();
+                var yr = prompt("Enter year", "");
+                var month=prompt("Enter mnth", "");
+                var day=prompt("Enter day", "");
+                var guess=prompt("Guess No of days left from today","");
+                var date2=new Date(String(yr),String(month-1),String(day));
+                document.write(date2+"<br><br>");
+                day=++day;
+                var date3=new Date(String(yr),String(month-1),String(day));
+                var daysleft = Math.floor((date3.getTime()-date.getTime())/(1000*60*60*24));
+                document.write("Your answer:"+guess+"<br>");
+                document.write("Correct answer:"+daysleft);
+                if(daysleft==guess)
+                {
+                        document.write("<br> <br>You guessed correctly");
+                }else{document.write("<br> <br> Try again by refreshing the page");}
+        </script>
+        </center>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><center><a href='webpage.html'><button class=" btn btn-danger" type=button>Back to Webpage</button></a></center>       
+</div>
+</body>
+</html>

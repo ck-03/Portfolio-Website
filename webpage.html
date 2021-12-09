@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Title>My Page</Title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="page.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body onload="checkCookie()">
+  <script>
+    function setCookie(cname,cvalue,exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      let expires = "expires=" + d.toGMTString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    function checkCookie() {
+      let user = getCookie("username");
+      if (user != "") {
+        alert("Welcome again " + user);
+      } else {
+         user = prompt("Please enter your name:","");
+         if (user != "" && user != null) {
+           setCookie("username", user, 30);
+         }
+      }
+    }
+    </script>
+  <div id="home">
+  <div id="navbar"><img src="cklogo.jpg">
+    <a style="font-size: 20px;color:white;" href="#home">Home</a>
+    <a style="font-size: 20px;color:white;" href="#about">About Me</a>
+    <a style="font-size: 20px;color:white;" href="#education">Education & Skills</a>
+    <a style="font-size: 20px;color:white;" href="#contact">Contact Me</a>
+    <a style="font-size: 20px;color:white;" href="game.html">Game</a>
+    <a style="font-size: 20px;color:white;" href="feedback form.html">Feedback</a>
+  </div>
+<div class="social-icons">
+  <ul>
+    <li><a href="https://www.facebook.com/chandrakiran.jayaraman/"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="https://twitter.com/chandrakiran15"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://github.com/ck-03" ><i class="fab fa-github"></i></a></li>
+    <li><a href="https://www.instagram.com/c_k_03/"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.youtube.com/channel/UCgJDslZUJpz5ZBBi47Kio7g"><i class="fab fa-youtube"></i></a></li>
+    <li><a href="https://discord.com/users/768486366090100748"><i class="fab fa-discord"></i></a></li>
+  </ul>
+</div>
+<div class="intro"> 
+  <div class="name">
+    <h1>CHANDRAKIRAN J</h1>
+  </div>
+</div>
+<div id="about">
+  <p>About Me</p>
+<div class="page2">
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <div class="image">
+  </div>
+  <div class="details"> 
+    <table style="width:50%">
+      <tr>
+        <th>   PERSONAL INFOS </th>
+      </tr>
+      <tr>
+      <td>Birthday:03-12-2001 </td>
+      <td>Age        : 19 Years </td> 
+      </tr>
+      <tr>
+      <td>College : Amrita University</td>
+      <td>Nationality : India</td>
+    </tr>
+    <tr>
+        <td>Address    : Ernakulam,kerala </td>
+        <td>Phone       : 7907619080</td>
+      </tr>
+      <tr>
+        <td>Email      : chandrakiran03@hotmail.com </td>
+        <td>Langages    : Malayalam, English </td>
+      </tr>
+  </div>
+  <div class ="hi">
+    <pre>
+
+      Who am I?
+
+      Myself Chandrakiran J,as of 2021 is a college student  that attends Amrita 
+      University. I have opted for Computer sceince. 
+
+      I love coding. Python is my Fouvourite language.
+
+      I would like to focus on my studies and get a good placement 
+      into top companies.
+    </pre>
+  </div>
+</div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="education">
+  <h1 >Education  </h1>
+  <p >Skills</p>
+ <div class="para">
+  <div class="pic">
+  </div>
+  <br><br><br><br><br>
+  <div class="pic2">
+  </div>
+  <pre>
+
+    * Passed 10th with 94% in 2017-18 from Cochin Refineries School  
+
+    * Passed 12th with 95% in 2019-20 from Cochin Refineries School
+
+    * Currently 1st CSE student at Amrita University
+
+    * Doing PROGRAMMING & DATA SCIENCE online degree course from IIT Madras
+  </pre>
+  <div class="para2">
+    <pre>
+
+      * Good at coding using python,sql and presently learning c programming,
+        html,javasricpt
+
+      * Plays football and cricket, represented school team
+
+    </pre>
+  </div>
+  <br><br>
+</div>
+</div>
+<div id="contact">
+  <div class="back">
+<div class="container">
+  <br><br><br><center><h2 style="color:rgb(240, 0, 0)";><b>Contact Me</b></h2></center>
+  <form onsubmit="Validate();">
+  <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <input type="message" class="form-control" id="message" placeholder="Enter message" style="height:200px;font-size:14pt;" name="message" required>
+    </div>
+    <center><button type="submit" class="btn btn-success"style="height:40px;width:150px; font-size:14pt;">Submit</button></center>
+  </form>
+</div>
+
+</div>
+</div>
+<script>
+  function Validate() {
+    var email = document.getElementById('email').value;
+    var x=email.indexOf('@');
+    var y=email.lastIndexOf('\.');
+    var condition = email.length>0 && x>0 && y>x+2 && email[at+1]!=='.' && email.indexOf(' ')===-1 && email.indexOf('..') ===-1;
+    if (email.length>0 && x>0 && y>x+2 && email[at+1]!=='.' && email.indexOf(' ')===-1 && email.indexOf('..') ===-1){
+      alert('Subscribed to newsletter.');
+    }
+    else alert('Invalid email');
+  }
+</script>
+</body>
+</html>

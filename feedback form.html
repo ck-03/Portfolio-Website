@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      body { 
+  background: url('6.jpg') no-repeat center center fixed; 
+  
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Feedback form</h2>
+  <form onsubmit="Validate();" >
+  <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="contact">Contact Number:</label>
+      <input type="text" class="form-control" id="contact" placeholder="Enter contact" name="contact">
+    </div>
+    <label for="rate">Rate my Webpage:</label>
+  <select name="rate" id="rate" required>
+  	<option value="choose">give rating</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+    <div class="form-group">
+      <label for="improve">How to improve:</label>
+      <input type="improve" class="form-control" id="improve" placeholder="Enter how to improve" style="height:200px;font-size:14pt;" name="improve">
+    </div>
+    <button type="submit" class="submit">Submit</button>
+  </form>
+  <center><a href='webpage.html'><button class=" btn btn-danger" type=button>Back to Webpage</button></a></center>
+</div>
+<script>
+function Validate() {
+    var email = document.getElementById('email').value;
+    var x=email.indexOf('@');
+    var y=email.lastIndexOf('\.');
+    var phoneno = /^\d{10}$/;
+    var contact = document.getElementById('contact').value;
+    var condition = email.length>0 && x>0 && y>x+2 && email[y+1]!=='.' && email.indexOf(' ')===-1 && email.indexOf('..') ===-1;
+    if (condition){
+      if(contact.match(phoneno))
+      {
+        alert("Response have been submitted")
+        return true;
+      }
+      else
+      {
+        alert("Not a valid Phone Number");
+        return false;
+      }
+    }
+    else {alert('Invalid email');}
+    
+    
+  }
+</script>
+</body>
+</html>

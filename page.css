@@ -1,0 +1,205 @@
+#navbar {
+  float: none;
+  z-index :100;
+  position: sticky;
+  top: 0;
+  padding-top : 15px;
+  padding-bottom: 15px;
+  background-color: #1b5538;
+  margin:0px;
+  left:0;
+}
+#navbar img {
+  height: 30px;
+  float: left;
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+#navbar a {
+  font-family: 'RocknRoll One', sans-serif;
+  margin-left:20px;
+  padding:30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.name h1{
+  position:absolute;
+  top:3%;
+  left:15%;
+  color : rgb(20, 240, 166);
+  font-family: 'RocknRoll One', sans-serif;
+}
+body{
+  margin:0px;
+}
+.name{
+  position : absolute;
+  left : 50%;
+  top : 53%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:720px;
+  background : url('ck.jpeg');
+  background-size : 100% 100%;
+  max-width:100%;
+}
+.intro{
+  background: url('1.JPG');
+  min-width : 720px;
+  min-height : 730px;
+  background-size:100% 100%;
+}
+.page2{
+  background: url('2.JPG');
+  min-width : 720px;
+  min-height : 730px;
+  background-size:100% 100%;
+}
+.details{
+  color : rgb(230, 130, 0);
+}
+.image{
+  position:relative;
+  margin-left: 120px;
+  background: url('ck2.JPG');
+  max-width : 420px;
+  min-height : 330px;
+  background-size:100% 100%;
+}
+#about p{
+  position:absolute;
+  text-decoration: underline;
+  color : rgb(167, 11, 37);
+  margin:0%;
+  font-size:50px;
+ margin-left:40%;
+ margin-top: 3%;
+  font-family: 'RocknRoll One', sans-serif;
+}
+.details table{ 
+  position:absolute;
+  margin:0%;
+  top:170%;
+  left:50%;
+  font-family: 'Limelight',cursive;
+  background-color: black;
+  border-color: rgb(2, 40, 83);
+  border-style: solid;
+  border-width: 5px;
+  max-width: 660px;
+}
+.hi pre{
+  position:absolute;
+  margin:0%;
+  top:125%;
+  left:50%;
+  font-family: 'Limelight',cursive;
+  background-color: black;
+  color : rgb(230, 130, 0);
+  border-color: rgb(3, 44, 82);
+  border-style: solid;
+  border-width: 5px;
+  max-width: 660px;
+}
+.para{
+  background: url('3.JPG');
+  min-width : 720px;
+  min-height : 730px;
+  background-size:100% 100%;
+}
+.pic{
+  position:relative;
+  margin-left: 70px;
+  background: url('ck3.JPG');
+  max-width : 420px;
+  min-height : 330px;
+  background-size:100% 100%;
+}
+.pic2{
+  position:relative;
+  margin-left:68%;
+  background: url('ck4.JPG');
+  max-width : 420px;
+  min-height : 330px;
+  background-size:100% 100%;
+}
+#education h1{
+  position:absolute;
+  text-decoration: underline;
+  color : rgb(167, 11, 37);
+  margin:0%;
+  font-size:50px;
+ margin-left:60%;
+ margin-top: 3%;
+  font-family: 'RocknRoll One', sans-serif;
+}
+#education p{
+  position:absolute;
+  text-decoration: underline;
+  color : rgb(167, 11, 37);
+  margin:0%;
+  font-size:50px;
+ margin-left:24%;
+ margin-top: 23%;
+  font-family: 'RocknRoll One', sans-serif;
+}
+.para pre{
+  position:absolute;
+  margin:0%;
+  top:232%;
+  left:52%;
+  font-family: 'Limelight',cursive;
+  background-color: black;
+  color : rgb(230, 130, 0);
+  border-color: rgb(3, 44, 82);
+  border-style: solid;
+  border-width: 5px;
+  max-width: 660px;
+}
+.para2 pre{
+  position:absolute;
+  margin:0%;
+  top:275%;
+  left:10%;
+  font-family: 'Limelight',cursive;
+  background-color: black;
+  color : rgb(230, 130, 0);
+  border-color: rgb(3, 44, 82);
+  border-style: solid;
+  border-width: 5px;
+  max-width: 660px;
+}
+.back{
+  background: url('4.JPG');
+  min-width : 720px;
+  min-height : 730px;
+  background-size:100% 100%;
+}
+
+.social-icons{
+  position: absolute;
+  right: 50px;
+  bottom: 2%; 
+}
+.social-icons ul li{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.social-icons ul li a{
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 12px 17px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.social-icons ul li a:hover{
+  background: #c32865;
+  color: #fff;
+}
